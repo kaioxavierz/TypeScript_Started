@@ -1,0 +1,28 @@
+{
+  "name": "tsrocket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc -watch",
+    "start": "npx nodemon dist/index.js",
+    "build": "sucrase ./src --out-dir ./dist --transpile-only --transforms typescript"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.4",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
